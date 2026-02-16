@@ -1,0 +1,33 @@
+system = SCF
+ISTART = 1
+ICHARG = 1
+ISPIN  =  1          #  (Spin polarised DFT)
+ENCUT = 600
+PREC = N
+IBRION = 0
+ISIF = 2
+LREAL = A
+LWAVE  = F      #  (Write WAVECAR or not)
+LCHARG = F      #  (Write CHGCAR or not)
+
+ALGO = F
+NCORE=1
+#NSIM=8
+#KPAR=2
+
+NELM = 500
+NELMIN = 4
+# AMIX = 0.16    ##########
+# BMIX = 0.0001        ##################
+
+ISMEAR =  0           #  (gaussian smearing method )
+SIGMA  =  0.05        #  (please check the width of the smearing)
+ISYM = 0
+EDIFF = 1E-5
+NSW = 0
+
+IVDW = 12               # van der walls
+#KSPACING = 0.25        #ka=24
+KSPACING = 0.6 #for gamma
+
+
