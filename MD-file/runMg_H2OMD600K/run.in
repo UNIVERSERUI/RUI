@@ -1,0 +1,12 @@
+potential ./nep.txt
+velocity 600
+############## MD setting ################## 
+ensemble nvt_lan 600 600 100
+correct_velocity 100
+time_step 0.5
+dftd3 pbe 12 6
+############### dump setting ################ 
+dump_exyz 10000 1 1   ######################
+dump_position 1000 precision single
+dump_thermo 1000
+run 10000000  ##########################
