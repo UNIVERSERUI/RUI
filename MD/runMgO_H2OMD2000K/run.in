@@ -1,0 +1,13 @@
+potential ./nep.txt
+minimize fire 1.0e-5 1000 1 1
+#velocity 300
+############## MD setting ################## 
+ensemble nvt_bdp 2000 2000 100
+correct_velocity 100
+time_step 0.25
+#dftd3 pbe 12 6
+############### dump setting ################ 
+dump_exyz 20000 1 1   ######################
+#dump_position 100 precision single
+dump_thermo 1000
+run 40000000  ##########################
